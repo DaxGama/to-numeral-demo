@@ -100,10 +100,11 @@ const words = {
     97: 'સત્તાણું',
     98: 'અઠ્ઠાણું',
     99: 'નવ્વાણું',
-    200: 'બસ્સો',
 };
 const units = {
     100: { word: 'સો', format: { remainder: ' #', seperator: '' } },
+    200: { word: 'બસ્સો', format: { value: false }, divideBy: 100 },
+    300: { word: 'સો', format: { remainder: ' #', seperator: '' }, divideBy: 100 },
     1000: { word: 'હજાર' },
     100000: { word: 'લાખ' },
     10000000: { word: 'કરોડ' },
