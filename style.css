@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
+:root {
+    --bg: #202124;
+    --bgHover: rgba(232, 234, 237, .04);
+    --border: #5f6368;
+    --font: #e8eaed;
+    --font-secondary: #9aa0a6;
+    --font-active: #8ab4f8;
+}
+
+body {
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: var(--bg);
+    color: var(--font);
+    font-size: 16px;
+    margin: 0;
+}
+
+header {
+    height: 4rem;
+    font-size: 2rem;
+    padding: 0 2rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+input {
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    font-family: 'Inter';
+    color: var(--font);
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 2rem;
+    flex-grow: 1;
+    text-align: center;
+}
+
+input:focus {
+    color: var(--font-active);
+    outline: none;
+}
+
+button {
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--font);
+    border-radius: .5rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+svg {
+    display: flex;
+    fill: inherit;
+}
+
+.icon-button {
+    height: 32px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--font-secondary);
+}
+
+.icon-button:hover {
+    background-color: var(--bgHover);
+}
+
+.icon-button-left {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.icon-button-right {
+    border-left: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.icon-button-active {
+    fill: var(--font-active);
+}
+
+#section-input {
+    padding: 1rem 2rem;
+    display: flex;
+}
+
+#section-output {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.output-bar {
+    display: flex;
+}
+
+.language-count {
+    color: var(--font-secondary);
+    font-size: .8rem;
+    flex-grow: 1;
+}
+
+#outputs {
+    row-gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#outputs.grid {
+    display: grid;
+    column-gap: 1.5rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 792px) {
+    #outputs.grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) {
+    #outputs.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.output {
+    border: 1px solid var(--border);
+    border-radius: .75rem;
+    padding: 1rem;
+}
+
+.output .lang {
+    font-size: 1.2rem;
+    margin: .2rem 0 .5rem;
+}
+
+.output .number {
+    font-size: 1rem;
+    margin: .2rem 0 1.5rem;
+    color: var(--font-secondary);
+}
+
+.output .words {
+    font-size: 1.5rem;
+}

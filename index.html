@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>toNumeral</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>toNumeral</h1>
+    </header>
+    <section id="section-input">
+        <input id="input" value="1234" />
+    </section>
+    <section id="section-output">
+        <div class="output-bar">
+            <p class="language-count"></p>
+            <button class="icon-button icon-button-left icon-button-active">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"></path>
+                </svg>
+            </button>
+            <button class="icon-button icon-button-right">
+                <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="outputs" class="grid">
+            <template id="template-output">
+                <div class="output">
+                    <div class="lang"></div>
+                    <div class="number"></div>
+                    <div class="words"></div>
+                </div>
+            </template>
+        </div>
+    </section>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
