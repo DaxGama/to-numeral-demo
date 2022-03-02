@@ -1,8 +1,8 @@
-import english from "./node_modules/to-numeral/src/lang/english/index.js";
-import englishIndian from "./node_modules/to-numeral/src/lang/englishIndian/index.js";
-import french from "./node_modules/to-numeral/src/lang/french/index.js";
-import hindi from "./node_modules/to-numeral/src/lang/hindi/index.js";
-import gujarati from "./node_modules/to-numeral/src/lang/gujarati/index.js";
+import english from "./to-numeral/lang/english/index.js";
+import englishIndian from "./to-numeral/lang/englishIndian/index.js";
+import french from "./to-numeral/lang/french/index.js";
+import hindi from "./to-numeral/lang/hindi/index.js";
+import gujarati from "./to-numeral/lang/gujarati/index.js";
 
 function setUpTemplates(container, template) {
     for (const lang of languages) {
